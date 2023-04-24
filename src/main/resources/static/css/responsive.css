@@ -1,0 +1,104 @@
+@media (max-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        margin-top: 7.1875rem;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        position: fixed;
+        height: fit-content;
+        background-color: #e5e5e5;
+        z-index: 2;
+        padding: 1rem 1.875rem;
+    }
+    
+    #sidebar-title {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    
+    #contactForm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        font-size: large;
+    }
+    #contactForm > * {
+        margin-left: 1rem;
+        margin-bottom: 0;
+    }
+    
+    .contactForm-label {
+        display: none;
+    }
+    
+    .content {
+        margin-top: 11.875rem;
+        margin-left: 0;
+    }
+    
+    header {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    #searchForm, #contactForm {
+        flex-direction: column;
+        display: none;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    #searchForm.active, #contactForm.active{
+        display: flex;
+    }
+    
+    #searchForm > input,  #contactForm > div > input {
+        flex: 1;
+        margin-bottom: 0.5rem;
+    }
+    
+    .sidebar {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #sidebar-title{
+        flex: initial;
+    }
+    
+    #sidebar-title-div {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #sidebar-title, #title{
+        font-size: medium;
+    }
+    
+    .content {
+        margin-top: 9.375rem;
+        margin-left: 0;
+    }
+    .toggle-button, .toggle-button-sidebar{
+        display: block;
+    }
+    .header-top {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}

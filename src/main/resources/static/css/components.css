@@ -1,0 +1,152 @@
+header {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.875rem;
+    background-color: #2b2d42;
+    color: #fff;
+    z-index: 3;
+    flex-wrap: wrap;
+}
+
+header > h1 {
+    justify-self: center;
+}
+
+#title {
+    margin-bottom: 0;
+}
+
+#searchForm  {
+    justify-content: center;
+}
+#searchForm > input {
+    flex: 1 0 10rem;
+    margin-right: .5rem;
+}
+.toggle-button, .toggle-button-sidebar{
+    display: none;
+}
+
+/* style arrow */
+.arrow {
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+}
+  
+/* rotate arrow when toggle button is clicked */
+.toggle-button.active .arrow, .toggle-button-sidebar.active .arrow {
+    transform: rotate(180deg);
+}
+
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: large;
+}
+#contactForm > * {
+    margin-bottom: 1rem;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+.sidebar {
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    height: 100vh;
+    background-color: #e5e5e5;
+    z-index: 2;
+}
+
+.content {
+    flex: 3;
+    margin-top: 6.25rem;
+    margin-left: 25rem;
+}
+.address-item {
+    display: flex;
+    align-items: baseline;
+    background-color: #f5f5f5;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    padding: .5rem;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+.address-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 4;
+    justify-content: space-between;
+}
+.address-info > input {
+    margin-bottom: 0;
+    padding: 0;
+}
+.address-buttons {
+    display: flex;
+    align-items: right;
+    justify-content: end;
+    flex: 1;
+}
+.address-buttons > button {
+    margin-left: .5rem;
+}
+.name {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.email {
+    font-size: 1rem;
+}
+
+.idInput {
+    display: none;
+}
+.idInput.active {
+    display: inline;
+}
+
+#error-alert {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffe6e6;
+    padding: 20px;
+    border: 2px solid #ffcccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    text-align: center;
+}
+
+#error-message {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#error-okay {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#error-okay:hover {
+    background-color: #ff4d4d;
+}

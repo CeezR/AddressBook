@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Address Book Application</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/components.css"/>
+    <link rel="stylesheet" href="css/utilities.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body>
+    <div id="error-alert">
+        <p id="error-message"></p>
+        <button id="error-okay">Okay</button>
+    </div>
+    <header class="fixed-top">
+        <div class="header-top">
+            <h2 id="title">Search for Address</h2>
+            <button class="toggle-button">
+                <span class="arrow">&#9660;</span>
+            </button>
+        </div>
+        <form id="searchForm">
+            <input type="text" id="searchInput-name" name="searchName" placeholder="Search by name" />
+            <input type="text" id="searchInput-email" name="searchEmail" placeholder="Search by email" />
+            <input type="text" id="searchInput-id" name="searchId" placeholder="Search by ID" />
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main class="mt-5">
+        <div class="sidebar">
+            <div id="sidebar-title-div">
+                <h2 id="sidebar-title">Add new Address</h2>
+                <button class="toggle-button-sidebar">
+                    <span class="arrow">&#9660;</span>
+                </button>
+            </div>
+            <form id="contactForm">
+                <div>
+                    <input type="text" id="name" name="name" required placeholder="Name">
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="content">
+        </div>
+    </main>
+</body>
+<script src="js/constants.js"></script>
+<script src="js/api.js"></script>
+<script src="js/domManipulation.js"></script>
+<script src="js/eventListener.js"></script>
+</html>

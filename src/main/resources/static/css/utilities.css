@@ -1,0 +1,9 @@
+.invertedButton {
+    background-color: white;
+    color:#0077b6;
+}
+
+.invertedButton:hover {
+    background-color: #0077b6;
+    color: white;
+}

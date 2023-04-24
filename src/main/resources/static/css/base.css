@@ -1,0 +1,91 @@
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input, select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+select {
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M7.97 10.16l-3.54-3.54a.75.75 0 0 1 1.06-1.06l2.47 2.47 2.47-2.47a.75.75 0 0 1 1.06 1.06l-3.54 3.54a.75.75 0 0 1-1.06 0z"></path></svg>') no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1rem;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    cursor: pointer;
+    width: max-content;
+}
+
+button:hover {
+    background-color: #0069d9;
+}
+
+/* Layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
