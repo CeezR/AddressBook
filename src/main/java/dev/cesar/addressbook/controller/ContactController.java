@@ -15,8 +15,11 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api")
 public class ContactController {
+    private final ContactRepository contactRepository;
     @Autowired
-    private ContactRepository contactRepository;
+    public ContactController(ContactRepository contactRepository) {
+        this.contactRepository = contactRepository;
+    }
 
     @GetMapping("/contacts")
     public List<Contact> getAllContacts() {
